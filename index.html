@@ -1386,8 +1386,38 @@
         <div class="author">Мадина<span>Магистратура · UCL London</span></div>
       </div>
     </div>
+    <div class="results-gallery reveal">
+      <img src="results/318a17da-2d41-490b-8891-5a058fea084e%202.jpg" alt="Результат ученика IELTS" loading="lazy">
+      <img src="results/8cc2ef48-c94f-4710-ac5e-ce45131b2da2%202.jpg" alt="Результат ученика IELTS" loading="lazy">
+      <img src="results/IMG_1881.PNG" alt="Результат ученика IELTS" loading="lazy">
+      <img src="results/IMG_7456.jpg" alt="Результат ученика IELTS" loading="lazy">
+      <img src="results/IMG_7457.jpg" alt="Результат ученика IELTS" loading="lazy">
+      <img src="results/IMG_9649%202.jpg" alt="Результат ученика IELTS" loading="lazy">
+      <img src="results/d3734dfb-3b16-4bbd-a22c-9ac6e2b6667a%202.JPG" alt="Результат ученика IELTS" loading="lazy">
+    </div>
   </div>
 </section>
+
+<style>
+  .results-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 48px;
+  }
+  .results-gallery img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+  @media (max-width: 600px) {
+    .results-gallery { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .results-gallery img { height: 200px; }
+  }
+</style>
 
 <!-- ========== FAQ ========== -->
 <section class="faq-section" id="faq">
