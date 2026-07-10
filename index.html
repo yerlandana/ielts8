@@ -1387,13 +1387,54 @@
       </div>
     </div>
     <div class="results-gallery reveal">
-      <img src="results/318a17da-2d41-490b-8891-5a058fea084e%202.jpg" alt="Результат ученика IELTS" loading="lazy">
-      <img src="results/8cc2ef48-c94f-4710-ac5e-ce45131b2da2%202.jpg" alt="Результат ученика IELTS" loading="lazy">
-      <img src="results/IMG_1881.PNG" alt="Результат ученика IELTS" loading="lazy">
-      <img src="results/IMG_7456.jpg" alt="Результат ученика IELTS" loading="lazy">
-      <img src="results/IMG_7457.jpg" alt="Результат ученика IELTS" loading="lazy">
-      <img src="results/IMG_9649%202.jpg" alt="Результат ученика IELTS" loading="lazy">
-      <img src="results/d3734dfb-3b16-4bbd-a22c-9ac6e2b6667a%202.JPG" alt="Результат ученика IELTS" loading="lazy">
+      <figure class="result-item">
+        <img src="results/318a17da-2d41-490b-8891-5a058fea084e%202.jpg" alt="Результат ученика IELTS" loading="lazy">
+        <figcaption><span class="r-name">Имя ученика</span><span class="r-score">IELTS 7.5</span></figcaption>
+      </figure>
+      <figure class="result-item">
+        <img src="results/8cc2ef48-c94f-4710-ac5e-ce45131b2da2%202.jpg" alt="Результат ученика IELTS" loading="lazy">
+        <figcaption><span class="r-name">Имя ученика</span><span class="r-score">IELTS 7.5</span></figcaption>
+      </figure>
+      <figure class="result-item">
+        <img src="results/4ba8c364-8745-4275-8985-9924bf5ab5ef.jpg" alt="Результат ученика IELTS" loading="lazy">
+        <figcaption><span class="r-name">Имя ученика</span><span class="r-score">IELTS 7.5</span></figcaption>
+      </figure>
+      <figure class="result-item">
+        <img src="results/IMG_1576.JPG" alt="Результат ученика IELTS" loading="lazy">
+        <figcaption><span class="r-name">Имя ученика</span><span class="r-score">IELTS 7.5</span></figcaption>
+      </figure>
+      <figure class="result-item">
+        <img src="results/IMG_1881.PNG" alt="Результат ученика IELTS" loading="lazy">
+        <figcaption><span class="r-name">Имя ученика</span><span class="r-score">IELTS 7.5</span></figcaption>
+      </figure>
+      <figure class="result-item">
+        <img src="results/IMG_5538.PNG" alt="Результат ученика IELTS" loading="lazy">
+        <figcaption><span class="r-name">Имя ученика</span><span class="r-score">IELTS 7.5</span></figcaption>
+      </figure>
+      <figure class="result-item">
+        <img src="results/IMG_7456.jpg" alt="Результат ученика IELTS" loading="lazy">
+        <figcaption><span class="r-name">Имя ученика</span><span class="r-score">IELTS 7.5</span></figcaption>
+      </figure>
+      <figure class="result-item">
+        <img src="results/IMG_7457.jpg" alt="Результат ученика IELTS" loading="lazy">
+        <figcaption><span class="r-name">Имя ученика</span><span class="r-score">IELTS 7.5</span></figcaption>
+      </figure>
+      <figure class="result-item">
+        <img src="results/IMG_8854.jpg" alt="Результат ученика IELTS" loading="lazy">
+        <figcaption><span class="r-name">Имя ученика</span><span class="r-score">IELTS 7.5</span></figcaption>
+      </figure>
+      <figure class="result-item">
+        <img src="results/IMG_8855.jpg" alt="Результат ученика IELTS" loading="lazy">
+        <figcaption><span class="r-name">Имя ученика</span><span class="r-score">IELTS 7.5</span></figcaption>
+      </figure>
+      <figure class="result-item">
+        <img src="results/IMG_9649%202.jpg" alt="Результат ученика IELTS" loading="lazy">
+        <figcaption><span class="r-name">Имя ученика</span><span class="r-score">IELTS 7.5</span></figcaption>
+      </figure>
+      <figure class="result-item">
+        <img src="results/d3734dfb-3b16-4bbd-a22c-9ac6e2b6667a%202.JPG" alt="Результат ученика IELTS" loading="lazy">
+        <figcaption><span class="r-name">Имя ученика</span><span class="r-score">IELTS 7.5</span></figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -1405,17 +1446,47 @@
     gap: 16px;
     margin-top: 48px;
   }
-  .results-gallery img {
+  .result-item {
+    position: relative;
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+  .result-item img {
     width: 100%;
     height: 280px;
     object-fit: cover;
-    border-radius: 14px;
     display: block;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+  .result-item figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 28px 14px 12px;
+    background: linear-gradient(to top, rgba(0,0,0,0.78), rgba(0,0,0,0));
+    color: #fff;
+  }
+  .result-item .r-name {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .result-item .r-score {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: #ffd7d0;
   }
   @media (max-width: 600px) {
     .results-gallery { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-    .results-gallery img { height: 200px; }
+    .result-item img { height: 200px; }
+    .result-item .r-name { font-size: 13px; }
+    .result-item .r-score { font-size: 12px; }
   }
 </style>
 
